@@ -245,13 +245,13 @@ ul {
   }
 }
 .solid-title:before {
-  content: "";
-  height: 1px;
-  width: 60%;
-  background: #d6d6d6;
-  position: absolute;
-  right: 0;
-  top: 28px;
+    content: "";
+    height: 3px;
+    width: 60%;
+    background: #6aaf08;
+    position: absolute;
+    right: 40px;
+    top: 65px;
 }
 @media only screen and (max-width: 1199px) {
   .solid-title:before {
@@ -857,7 +857,6 @@ ul {
 }
 .header-bottom-area {
   position: relative;
-  height: 92px;
 }
 .header-bottom-area > div {
   background: #ffffff;
@@ -887,6 +886,7 @@ ul {
   display: table;
   background: transparent;
   height: 92px;
+  margin: 0 auto;
 }
 .header-bottom-area .logo-area a {
   vertical-align: middle;
@@ -916,7 +916,7 @@ ul {
 }
 .header-bottom-area .main-menu-area {
   float: right;
-  height: 92px;
+  height: 75px;
   display: table;
 }
 .header-bottom-area .main-menu-area nav {
@@ -934,7 +934,7 @@ ul {
   position: relative;
 }
 .header-bottom-area .main-menu-area nav ul li a {
-  padding: 0 16px 34px;
+  padding: 0 16px 16px;
   display: block;
   transition: all .3s;
   text-transform: uppercase;
@@ -1242,6 +1242,14 @@ ul {
   opacity: 1;
   visibility: visible;
 }
+.glogo {
+  display: block;
+  text-indent: -9999px;
+  width: 100px;
+  height: 82px;
+  background: url(img/glogo.svg)  no-repeat top left;
+  background-size: 100px 82px;
+}
 .stick {
   height: 70px;
   position: fixed;
@@ -1255,6 +1263,12 @@ ul {
 }
 .stick .logo-area {
   height: 70px;
+}
+
+
+.stick .img-logo{
+  max-width: 60%;
+  margin: 0 auto;
 }
 .stick .logo-area:before {
   border-width: 69px 0 0 63px;
@@ -2579,6 +2593,57 @@ body.mean-container .wrapper-area {
   margin: 0 auto;
   width: 170px;
 }
+
+.sub-service2 .service-box {
+  position: absolute;
+  padding: 30px;
+  color: #ffffff;
+  text-align: center;
+  background-color: rgba(106, 175, 8, 0.8);
+}
+
+.sub-service2 .service-box span {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  border: 8px solid #6aaf08;
+}
+
+.sub-service2 .service-box span i {
+  color: #6aaf08;
+  line-height: 65px;
+  font-size: 20px;
+}
+
+.sub-service2 .service-box h2 {
+  font-size: 24px;
+  margin: 8px 0 12px;
+}
+
+.sub-service2 .service-box a {
+  position: absolute;
+  bottom: -22px;
+  z-index: 11;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 180px;
+}
+
+.sub-service2 .service-box {
+  margin-bottom: 0px;
+  text-align: center;
+  position: relative;
+}
+
 /*-------------------------------------
 6.2 Service 2 Area Styles  
 ---------------------------------------*/
