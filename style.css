@@ -234,7 +234,6 @@ ul {
 }
 .solid-title {
   text-transform: uppercase;
-  color: #111111;
   position: relative;
   margin-bottom: 3px;
   font-size: 32px;
@@ -381,7 +380,10 @@ ul {
 .title-bar50 {
   margin-bottom: 40px;
   position: relative;
-  color: #111111;
+}
+
+.ask-question-right{
+  padding: 0 30px 0;
 }
 @media only screen and (max-width: 479px) {
   .title-bar50 {
@@ -1263,9 +1265,8 @@ ul {
 }
 .stick .logo-area {
   height: 70px;
+  max-width: 70%;
 }
-
-
 .stick .img-logo{
   max-width: 60%;
   margin: 0 auto;
@@ -1515,6 +1516,8 @@ a.mobile-site-logo {
   display: block;
   background: #fff;
   padding: 4px 0 10px;
+  height: 70px;
+  max-width: 70%;
 }
 body.mean-container .wrapper-area {
   padding-top: 68px;
@@ -1603,7 +1606,7 @@ body.mean-container .wrapper-area {
 }
 .slider1-area:before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #072618c4;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -2369,7 +2372,9 @@ body.mean-container .wrapper-area {
 5.4 About Us Page 2 Area Styles  
 ---------------------------------------*/
 .about-us-page2-area {
-  padding: 86px 0 80px;
+  padding: 80px 0 80px;
+  background: #000000;
+  
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .about-us-page2-area {
@@ -2384,6 +2389,7 @@ body.mean-container .wrapper-area {
 .about-us-page2-area .history-box {
   padding-right: 100px;
   margin-bottom: 50px;
+  color: #ffffff;
 }
 @media only screen and (max-width: 767px) {
   .about-us-page2-area .history-box {
@@ -2410,10 +2416,11 @@ body.mean-container .wrapper-area {
 }
 .about-us-page2-area .history-box .history-list li h3 {
   line-height: 1;
-  color: #111111;
+  color: #ffffff;
 }
 .about-us-page2-area .history-box .history-list li p {
   margin-bottom: 0;
+  color: #ffffff;
 }
 .about-us-page2-area .history-box .history-list li:last-child {
   border-left: 0;
@@ -6506,7 +6513,7 @@ body.mean-container .wrapper-area {
 13.4 Why Choose Us Area Styles  
 ---------------------------------------*/
 .why-choose-us-area {
-  padding: 86px 0 45px;
+  padding: 85px 0 0px;
 }
 .why-choose-us-area .why-choose-us-box {
   margin-bottom: 30px;
@@ -6517,17 +6524,17 @@ body.mean-container .wrapper-area {
 .why-choose-us-area .why-choose-us-box .media a i {
   border: 1px dotted #6aaf08;
   color: #6aaf08;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
-  line-height: 80px;
+  line-height: 60px;
   text-align: center;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  font-size: 30px;
+  font-size: 25px;
 }
 .why-choose-us-area .why-choose-us-box .media .media-body {
   padding-left: 30px;
@@ -6669,7 +6676,7 @@ body.mean-container .wrapper-area {
 13.7 Contact Banner Area Styles  
 ---------------------------------------*/
 .contact-banner-area {
-  padding: 85px 0 100px;
+  padding: 50px 0 50px;
   background: url(img/contact-banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -7488,8 +7495,17 @@ body.mean-container .wrapper-area {
 /*======================================
 15. Footer Area Styles 
 ========================================*/
+.social-media{
+    background: #000;
+    position: relative;
+    bottom: -50px;
+    z-index: -1;
+  }
+  .text-white{
+    color: #ffffff !important;
+  }
 .footer-area-top {
-  padding: 93px 0 70px;
+  padding: 50px 0 50px;
   background: #111111;
 }
 @media (min-width: 480px) and (max-width: 991px) {
@@ -7513,24 +7529,29 @@ body.mean-container .wrapper-area {
   margin-bottom: 30px;
   color: #ffffff;
 }
+
 .footer-area-top .footer-social {
   margin-top: 40px;
 }
-.footer-area-top .footer-social li {
+.footer-area-top .footer-social li,
+.header-top-area .header-social li {
   display: inline-block;
   margin-right: 5px;
 }
-.footer-area-top .footer-social li a {
+.footer-area-top .footer-social li a,
+.header-top-area .header-social li a {
   width: 29px;
   height: 26px;
   border: 1px solid #292f33;
   display: block;
   text-align: center;
 }
-.footer-area-top .footer-social li a i {
+.footer-area-top .footer-social li a i,
+.header-top-area .header-social li a i {
   color: #6aaf08;
 }
-.footer-area-top .footer-social li a:hover i {
+.footer-area-top .footer-social li a:hover i,
+.header-top-area .header-social li a:hover i {
   color: #ffffff;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -7538,6 +7559,7 @@ body.mean-container .wrapper-area {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+
 .footer-area-top .twitter-feed li {
   margin-bottom: 10px;
 }
@@ -7810,3 +7832,6 @@ body.mean-container .wrapper-area {
     top: 50%;
   }
 }
+
+
+
