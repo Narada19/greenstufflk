@@ -28,9 +28,47 @@
         <link rel="stylesheet" href="style.css">
         <!-- Modernizr Js -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0&appId=370252033038305&autoLogAppEvents=1" nonce="R6cN2Wkm"></script>
+        
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0&appId=370252033038305&autoLogAppEvents=1" nonce="R6cN2Wkm">
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-234095702-1">
+            </script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-234095702-1');
+            </script>
     </head>
     <body>
+        <!-- Messenger Chat Plugin Code -->
+        <!-- <div id="fb-root"></div> -->
+        <!-- Your Chat Plugin code -->
+        <div id="fb-customer-chat" class="fb-customerchat"></div>
+        <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "108953347488055");
+            chatbox.setAttribute("attribution", "biz_inbox");
+        </script>
+        <!-- Your SDK code -->
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                xfbml            : true,
+                version          : 'v14.0'
+                });
+            };
+
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
         <div id="fb-root"></div>
         <div class="wrapper-area">
             <!--[if lt IE 8]>
@@ -59,7 +97,7 @@
                                         <ul>
                                             <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#"> 214/a Sudarshana Mawatha, Malabe 10115 </a></li>
                                             <li><i class="fa fa-phone" aria-hidden="true"></i><a href="Phone:+94112119733"> (+94) 11 211 9733 </a></li>
-                                            <li></li><button class="btn-submit" type="submit">Contact Us </button></ul>
+                                            <li><button class="btn-submit" type="submit">Contact Us </button></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -81,11 +119,9 @@
                                         <nav>
                                             <ul>
                                                 <li><a href="index.html">Home</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="news.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
+                                                <li><a href="">Services</a></li>
+                                                <li><a href="">About Us</a></li>
+                                                <li><a href="#">Contact</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -142,9 +178,9 @@
                     <div id="slider-direction-2" class="t-cn slider-direction">
                         <div class="slider-content s-tb slider-2">
                             <div class="title-container s-tb-c">
-                                <h1 class="title1">MAKING <span> THE WORLD NATURE</span></h1>
-                                <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the idustry's standard  type specimen</p>
-                                <p>book. It has survived not only five centuries</p>
+                                <h1 class="title1">BRING <span>NATURE</span> INTO <span> YOUR HOME</span></h1>
+                                <p>Green stuff pvt ltd is a landscaping company based in Sri Lanka and United Arab Emirates.</p>
+                                <p>export of plants and agriculture based products to the middle east.</p>
                                 <div class="slider-btn-area">
                                     <a href="#" class="btn-slider-fill">Read More</a>
                                     <a href="#" class="btn-slider">Contact Us</a>
@@ -155,9 +191,9 @@
                     <div id="slider-direction-3" class="t-cn slider-direction">
                         <div class="slider-content s-tb slider-3">
                             <div class="title-container s-tb-c">
-                                <h1 class="title1">How <span>Trees</span> can Save the <span> World</span> !</h1>
-                                <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the idustry's standard  type specimen</p>
-                                <p>book. It has survived not only five centuries</p>
+                                <h1 class="title1">BRING <span>NATURE</span> INTO <span> YOUR HOME</span></h1>
+                                <p>Green stuff pvt ltd is a landscaping company based in Sri Lanka and United Arab Emirates.</p>
+                                <p>export of plants and agriculture based products to the middle east.</p>
                                 <div class="slider-btn-area">
                                     <a href="#" class="btn-slider-fill">Read More</a>
                                     <a href="#" class="btn-slider">Contact Us</a>
@@ -169,69 +205,63 @@
             </div>
             <!-- Slider 1 Area End Here -->
             <!-- Service 1 Area Start Here -->
-            <div class="service1-area">
+            <div id="service-tab" class="service2-area sub-service2">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="service-box margin-b-a-tab">
-                                <span><i class="fa fa-pagelines" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-tree" aria-hidden="true"></i></span>
                                 <h2>PLANT EXPORT</h2>
-                                <p>Dorem ipsum dolor sit amet, consectetur elit. Curabitur euismod enim a metus adipiscing aliquam</p>
+                                <!-- <p>Dorem ipsum dolor sit amet, consectetur elit. Curabitur euismod enim a metus adipiscing aliquam</p> -->
                                 <a class="btn-read-more-h-b" href="#">Read More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="service-box margin-b-a-tab">
-                                <span><i class="fa fa-scissors" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-tree" aria-hidden="true"></i></span>
                                 <h2>LANDSCAPING</h2>
-                                <p>Whether you are looking for a simple garden or a full wide-scale landscaping project with landscape
+                                <!-- <p>Whether you are looking for a simple garden or a full wide-scale landscaping project with landscape
                                 design services..
-                                </p>
+                                </p> -->
                                 <a class="btn-read-more-h-b" href="#">Read More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="service-box margin-b-a-tab">
-                                <span><i class="fa fa-pagelines" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-tree" aria-hidden="true"></i></span>
                                 <h2>HORTICULTURE</h2>
-                                <p>Due to long hours in the office and longer commute times, we’re spending more time indoors and
-                                   away from ..</p>
+                                <!-- <p>Due to long hours in the office and longer commute times, we’re spending more time indoors and
+                                   away from ..</p> -->
                                 <a class="btn-read-more-h-b" href="#">Read More</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="service2-area sub-service2">
-                <div class="container">
-                    <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="service-box margin-b-a-tab">
-                                <span><i class="fa fa-pagelines" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-tree" aria-hidden="true"></i></span>
                                 <h2>VERTICAL GARDENING </h2>
-                                <p> Don't have space? don't worry! We specialize in vertical Gardens which are designed for the 
+                                <!-- <p> Don't have space? don't worry! We specialize in vertical Gardens which are designed for the 
                                     right ..
-                                </p>
+                                </p> -->
                                 <a class="btn-read-more-h-b" href="#">Read More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="service-box margin-b-a-tab">
-                                <span><i class="fa fa-pagelines" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-tree" aria-hidden="true"></i></span>
                                 <h2>ROOFTOP GARDENING</h2>
-                                <p>Kimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                <!-- <p>Kimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                                     industry's ..
-                                </p>
+                                </p> -->
                                 <a class="btn-read-more-h-b" href="#">Read More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="service-box margin-b-a-tab">
-                                <span><i class="fa fa-pagelines" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-tree" aria-hidden="true"></i></span>
                                 <h2>MICRO-IRRIGATION</h2>
-                                <p>Drip Irrigation System, is an incredibly efficient watering method that slowly delivers
+                                <!-- <p>Drip Irrigation System, is an incredibly efficient watering method that slowly delivers
                                     water directly..
-                                </p>
+                                </p> -->
                                 <a class="btn-read-more-h-b" href="#">Read More</a>
                             </div>
                         </div>
@@ -239,23 +269,26 @@
                 </div>
             </div>
             <!-- About Us Page 1 Area Start Here -->
-            <div class="about-us-page2-area">
+            <div id="aboutus-tab" class="about-us-page2-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                             <div class="history-box">
-                                <h2 class="title-bar50">Welcome Come Green Stuff Sri Lanka</h2>
-                                <p>GREEN STUFF PVT LTD Is a leader plant exporting and landscaping company in Sri Lanka… We are Fitting and Landscaping your dream garden. we Will bring the design free for you. Our company is a chained group of companies with Dubai and Sri Lanka! We have the largest plant collection Plant and many More Garden Services and accessories.
-                                    We have a beautiful collection of paving blocks and interlocking stones also for outdoor landscaping. We can create a live garden for you that will bring your landscape to life with natural beauty.
+                                <h2 class="title-bar50">Welcome Green Stuff Sri Lanka</h2>
+                                <p>
+                                    GREEN STUFF PVT LTD is a leading plant exporting and landscaping company in Sri Lanka associated with UAE (Dubai). With many years of experience and the finest staff, we provide our customers with excellent service. <br/>
+                                    We are the most modern, knowledgeable team with an enormous collection of high-quality plants. We trade them internationally to manifest our green values to the world.  <br/>
+                                    We have many garden services to make your dream garden a reality. Our team is ready to create a unique and pleasing environment around you, not only with the plants but also with the remarkable collection of interlocking stones. Our landscaping art will make your land the most creative and attractive garden intertwined with the environment.
                                     </p>
                                 <ul class="history-list">
                                     <li>
                                         <h3 class="text-white">Our Mission</h3>
-                                        <p class="text-white">Our mission is to provide customers with the best landscaping services ,Reliable services and exporting good and healthy profitable plants to dubai.make the world green through and improve the standard of living in Sri lanka by providing employment and gaining foreign exchange to the country!</p>
+                                        <p class="text-white">Our mission is to export high-quality plants worldwide to make a nature-loving and greener world and provide our valuable customers with the best and most reliable landscaping service. And improve living standards in Sri Lanka by promoting employment and bringing the foreign exchange to the country.</p>
                                     </li>
                                     <li>
                                         <h3 class="text-white">Our Vision</h3>
-                                        <p class="text-white">To become the Sri lanka best landscaping and plant exporting company!
+                                        <p class="text-white">Our vision is to spread the value of nature and heal human lives by distributing the best green products worldwide. And to become the best plant export and landscaping company in Sri Lanka.
+
                                         </p>
                                     </li>
                                 </ul>
@@ -276,14 +309,14 @@
                 <!-- Contact Banner Area Start Here -->
             <div class="contact-banner-area">
                 <div class="container">
-                        <h2>Creat Your<span> Beautiful Garden</span> With Us!<br/><span> Please Call (+94) 11 211 9733</span> </h2>
-                        <a href="#" class="btn-contact btn-lg">Contact Us</a>
+                        <h2>Creat Your<span> Beautiful Garden</span> With Us!<br/><span> Please Call <a href="">(+94) 11 211 9733</a> </span> </h2>
+                        <a href="#contactus-tab" class="btn-contact btn-lg">Contact Us</a>
                     </div>
                 </div>
             </div>
             <!-- Contact Banner Area End Here -->
               <!-- Why Choose Us Area Start Here -->
-              <div class="why-choose-us-area">
+              <div id="contactus-tab" class="why-choose-us-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
@@ -309,8 +342,8 @@
                                         <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                                         </a>
                                         <div class="media-body">
-                                            <h3><a href="#">Free quotation</a></h3>
-                                            <p>Request your free quotation.
+                                            <h3><a href="#">Free Assistant</a></h3>
+                                            <p>If you Need any further details.
                                                 Email your specifications to info@greenstufflk.com</p>
                                         </div>
                                     </div>
@@ -323,7 +356,7 @@
                                         <i class="fa fa-users" aria-hidden="true"></i>
                                         </a>
                                         <div class="media-body">
-                                            <h3><a href="#">Creative ideas</a></h3>
+                                            <h3><a href="#">Creative Ideas</a></h3>
                                             <p>Modern ideas and latest trends, create stylish, interesting and comfortable landscaping.</p>
                                         </div>
                                     </div>
@@ -337,16 +370,16 @@
                                         </a>
                                         <div class="media-body">
                                             <h3><a href="#">Customer Focused</a></h3>
-                                            <p>simply dummy text of the printing andertyh typesetting induum has been they are indus.</p>
+                                            <p>Dream big! Our landscape designers are ready to make it a reality.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-                            <div class="ask-question-right">
-                                <h2 class="title-bar50">Request An Estimate</h2>
-                                <form id="getQuote-form">
+                            <div  class="ask-question-right">
+                                <h2 class="title-bar50">Contact Us</h2>
+                                <form id="getQuote-form" action="https://formsubmit.co/greenstufflk@gmail.com" method="POST" />
                                     <fieldset>
                                         <div class="row">
                                             <div class="col-sm-12">
@@ -363,7 +396,7 @@
                                             </div>
                                             <div class="col-sm-12">
                                                 <div class="form-group">
-                                                    <input id="form-subject" name="subject" placeholder="Subject*" class="form-control" type="text" data-error="Subject field is required" required>
+                                                    <input id="form-phone" name="phone" placeholder="Phone*" class="form-control" type="text" data-error="Phone field is required" required>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
@@ -404,9 +437,8 @@
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                 <div class="footer-box">
                                     <h3>About Us</h3>
-                                    <p>GREEN STUFF PVT LTD Is a leader plant exporting and landscaping company in Sri Lanka… We are Fitting and 
-                                        Landscaping your dream garden. we Will bring the design free for you. Our company is a chained group of 
-                                        companies with Dubai and Sri Lanka! We have the largest plant collection Plant and many More Garden Services and accessories.</p>
+                                    <p>GREEN STUFF PVT LTD is a leading plants and landscaping company associated with UAE (Dubai) and Sri Lanka with the most significant collection of plants and numerous garden services and accessories. We always provide excellent service with a knowledgeable and creative staff. Mainly, we export the highest-quality plants with many years of experience to highlight the greenery identity of the country.
+                                         In addition, our team is ready to create and landscape your garden by fulfiling your dream a reality.</p>
                                     <ul class="footer-social">
                                         <li><a href="https://www.facebook.com/greenstuffpvtltd/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                         <li><a href="https://twitter.com/GreenStufflk" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -414,16 +446,6 @@
                                         <li><a href="https://www.instagram.com/greenstuffpvtltd/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                                         <li><a href="https://www.pinterest.com/greenstufflk" target="_blank"><i class="fa fa-pinterest"  aria-hidden="true"></i></a></li>
                                     </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                <div class="footer-box">
-                                    <h3>Facebook Page</h3>
-                                    <div class="fb-page" data-href="https://www.facebook.com/greenstuffpvtltd/" data-tabs="timeline" data-width="" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                                        <blockquote cite="https://www.facebook.com/greenstuffpvtltd/" class="fb-xfbml-parse-ignore">
-                                            <a href="https://www.facebook.com/greenstuffpvtltd/">GREEN STUFF PVT LTD</a>
-                                        </blockquote>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -446,9 +468,13 @@
                                 <div class="footer-box">
                                     <h3>Contact US</h3>
                                     <ul class="corporate-address">
-                                        <li><i class="fa fa-phone" aria-hidden="true"></i>(+94) 11 211 9733</li>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="">(+94) 11 211 9733</a></li>
                                         <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#" class="text-white"> 214/a Sudarshana Mawatha, Malabe 10115 </a></li>
                                     </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="footer-box">
                                     <div class="newsletter-area">
                                         <h3>Subcribe</h3>
                                         <div class="input-group stylish-input-group">
@@ -489,7 +515,8 @@
         <div id="preloader"></div>
         <!-- Preloader End Here -->
         <!-- jquery-->	
-        <script data-cfasync="false" src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/vendor/jquery-2.2.4.min.js"></script>
+        <script data-cfasync="false" src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script src="js/vendor/jquery-2.2.4.min.js"></script>
         <!-- bootstrap js -->
         <script src="js/bootstrap.min.js"></script>
         <!-- Owl Cauosel JS -->

@@ -1451,7 +1451,7 @@ ul {
 .mobile-menu-area {
   display: none;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .mobile-menu-area {
     display: block;
   }
@@ -1509,7 +1509,7 @@ ul {
 .mean-container .mean-bar {
   padding: 0;
   float: none;
-  background: transparent;
+  background: white;
   position: fixed;
 }
 a.mobile-site-logo {
@@ -2535,6 +2535,9 @@ body.mean-container .wrapper-area {
 /*-------------------------------------
 6.1 Service 1 Area Styles  
 ---------------------------------------*/
+.pb-5{
+  padding-bottom: 70px !important;
+}
 .service1-area {
   position: relative;
   top: -208px;
@@ -2655,7 +2658,8 @@ body.mean-container .wrapper-area {
 6.2 Service 2 Area Styles  
 ---------------------------------------*/
 .service2-area {
-  padding: 100px 0 70px;
+  /* padding: 50px 0; */
+  margin: 50px 0;
 }
 @media (min-width: 480px) and (max-width: 991px) {
   .service2-area {
@@ -2671,7 +2675,7 @@ body.mean-container .wrapper-area {
   }
 }
 .service2-area .service-box {
-  margin-bottom: 30px;
+  margin: 60px 0;
   text-align: center;
   position: relative;
 }
@@ -6698,8 +6702,14 @@ body.mean-container .wrapper-area {
   color: #ffffff;
   font-size: 38px;
 }
-.contact-banner-area h2 span {
+.contact-banner-area h2 span, 
+.contact-banner-area h2 span a{ 
   color: #6aaf08;
+}
+
+.footer-area-top .corporate-address li a{
+  margin-bottom: 20px;
+  color: #fff;
 }
 .contact-banner-area p {
   color: #e5e5e5;
