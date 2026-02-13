@@ -1,0 +1,15 @@
+# robots.txt for greenstufflk.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://greenstufflk.com/sitemap.xml
+
+# Disallow admin/private areas (if any)
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+
+# Crawl-delay (optional - use sparingly)
+Crawl-delay: 1
