@@ -110,6 +110,39 @@ End CSS INDEX
 /*=====================================
 1. Theme Default CSS  
 =======================================*/
+
+/* CSS Variables for easy customization */
+:root {
+  /* Primary Colors */
+  --primary-color: #6aaf08;
+  --primary-dark: #5c9d01;
+  --primary-light: rgba(106, 175, 8, 0.8);
+  
+  /* Neutral Colors */
+  --dark-color: #111111;
+  --dark-secondary: #222222;
+  --gray-color: #646464;
+  --gray-light: #d6d6d6;
+  --white: #ffffff;
+  
+  /* Background Colors */
+  --bg-white: #ffffff;
+  --bg-light: #f8f8f8;
+  --bg-dark: #272727;
+  
+  /* Typography */
+  --font-heading: 'Raleway', sans-serif;
+  --font-body: 'Lato', sans-serif;
+  
+  /* Transitions */
+  --transition: all 0.5s ease-out;
+  
+  /* Border Radius */
+  --radius-sm: 5px;
+  --radius-md: 13px;
+  --radius-lg: 45px;
+}
+
 html,
 body {
   height: 100%;
